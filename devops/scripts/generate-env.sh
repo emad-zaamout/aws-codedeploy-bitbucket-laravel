@@ -3,7 +3,7 @@
 # loads your .env file stored inside AWS Systems Manager (Paramater).
 
 # aws paramater store name & region
-PARAMATER="laraveldevops-ENV"
+PARAMATER="aws-codedeploy-bitbucket-laravel-ENV"
 REGION="ca-central-1"
 
 # Get parameters and put it into .env file inside application root

@@ -9,15 +9,15 @@ Laravel Deployment Automation. Using:
 - **Bitbucket** – to store our code repository and run pipelines
 - **Bash** – to create our scripts
 
-Tutorial Video: https://www.youtube.com/watch?v=YQsHMbbcIBo
-Blog Post: https://www.ahtcloud.com/laravel-devops-tutorial-deployment-automation-ci-cd-aws-bitbucket
-
 Code Files
-https://github.com/eezaamout/laravel-devops
-https://bitbucket.org/eezaamout/laravel-devops
+**[Youtube Tutorial Video](https://www.youtube.com/watch?v=YQsHMbbcIBo)**
+**[Blog](https://www.ahtcloud.com/aws-codedeploy-bitbucket-laravel)**
+**[Github](https://github.com/eezaamout/aws-codedeploy-bitbucket-laravel)**
+**[Bitbucket](https://bitbucket.org/eezaamout/aws-codedeploy-bitbucket-laravel)**
 
+**Complete CI\CD Pipelines.**
 
-Complete CI\CD Pipelines. Make sure to include the following **repository variables** inside your Bitbucket repository. They are used by the scripts.
+Make sure to include the following **repository variables** inside your Bitbucket repository. They are used by the scripts.
 - **AWS_SECRET_ACCESS_KEY**: AWS IAM User Security Credentials secret access key.
 - **AWS_ACCESS_ID**: AWS IAM User Security Credentials access key id.
 - **AWS_DEFAULT_REGION**: Your AWS Resources region. I.e. ca-central-1

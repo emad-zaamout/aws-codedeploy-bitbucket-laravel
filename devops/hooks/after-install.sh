@@ -3,7 +3,7 @@
 # Runs inside production server.
 
 # Project directory on server for your project.
-export WEB_DIR="/var/www/laravel-devops"
+export WEB_DIR="/var/www/aws-codedeploy-bitbucket-laravel"
 # Your server user. Used to fix permission issue & install our project dependcies
 export WEB_USER="ubuntu"
 

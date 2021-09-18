@@ -2,8 +2,8 @@
 
 # Not used anywhere. Just helps you set up apache2 conf, disable default site and enable new site. Change variables.
 APACHE_DIR="/etc/apache2"
-CONFIG_FILE_NAME="laravel-devops.conf"
-WEBSITE_DIR="/var/www/laravel-devops"
+CONFIG_FILE_NAME="aws-codedeploy-bitbucket-laravel.conf"
+WEBSITE_DIR="/var/www/aws-codedeploy-bitbucket-laravel"
 SERVER_ADMIN="your@email.com"
 # were using our server public ip. If you want to use a domain, make sure to
 # change those values
