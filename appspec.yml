@@ -1,0 +1,15 @@
+# Events:
+# ApplicationStop, BeforeInstall, AfterInstall, ApplicationStart, ValidateService
+# https://docs.aws.amazon.com/codedeploy/latest/APIReference/API_LifecycleEvent.html
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/LaravelDevOps
+hooks:
+  AfterInstall:
+    - location: ./devops/hooks/after-install.sh
+      runas: ubuntu
+
+#BeforeInstall
+#AfterInstall

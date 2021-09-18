@@ -1,0 +1,46 @@
+# Bitbucket yml validator
+# https://bitbucket-pipelines.prod.public.atl-paas.net/validator
+image: php:8.0-fpm
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          services:
+            - mysql
+          name: 'Building & Testing'
+          script:
+            - bash ./devops/build-server.sh
+            - bash ./devops/build-project.sh
+            - bash ./devops/run-tests.sh
+#      - step:
+#          name: 'Running Lint'
+#          script:
+#            - echo "Your linting goes here..."
+# staging is exactly the same thing as production. Duplicate your production
+# instance, and basically add the same scripts (just modify the server)
+#    - step:
+#        name: 'Deploying to Staging'
+#        deployment: staging
+#        script:
+#          - bash ./devops/build-server.sh
+#          - bash ./devops/build-for-production.sh
+#          - bash ./devops/scripts/deploy-production.sh
+    - step:
+        name: 'Deploying to Production'
+        deployment: production
+#        trigger: 'manual'
+        script:
+          - bash ./devops/build-server.sh
+          - bash ./devops/build-for-production.sh
+          - bash ./devops/scripts/deploy-production.sh
+
+definitions:
+  services:
+    mysql:
+      image: mysql:8.0
+      environment:
+        MYSQL_DATABASE: 'homestead'
+        MYSQL_RANDOM_ROOT_PASSWORD: 'yes'
+        MYSQL_USER: 'homestead'
+        MYSQL_PASSWORD: 'secret'
