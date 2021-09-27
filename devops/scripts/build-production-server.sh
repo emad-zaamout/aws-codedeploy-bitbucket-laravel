@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author Emad Zaamout | support@ahtcloud.com
 
 # Not used anywhere. Just helps install all what you need on your production server to run a basic laravel project. Run manually.
 
