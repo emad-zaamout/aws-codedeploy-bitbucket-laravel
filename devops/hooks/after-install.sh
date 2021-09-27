@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author Emad Zaamout | support@ahtcloud.com
 
 # Runs inside production server.
 
