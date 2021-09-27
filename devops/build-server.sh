@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Author Emad Zaamout | support@ahtcloud.com
 # Used inside Bitbucket pipelines. Builds our server for testing stage.
 
 # Update/Install Packages
