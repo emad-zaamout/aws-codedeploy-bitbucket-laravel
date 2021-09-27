@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Author Emad Zaamout | support@ahtcloud.com
 # Used inside Bitbucket pipelines. Builds Laravel project and prepares it
 # for testing. Creates an .env file from .env.pipelines.
 
