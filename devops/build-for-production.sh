@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Author Emad Zaamout | support@ahtcloud.com
 # Builds Laravel App for production. Used inside Bitbucket pipelines to build
 # our project and prepare it for deployment.
 
