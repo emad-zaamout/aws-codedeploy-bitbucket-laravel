@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author Emad Zaamout | support@ahtcloud.com
 
 # Runs inside Bitbucket pipelines. Creates a tar bundle for our project
 # and stores it in AWS S3 Bucket. Then creates a new deployment using
