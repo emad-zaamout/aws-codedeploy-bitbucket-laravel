@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author Emad Zaamout | support@ahtcloud.com
 
 # Not used anywhere. Just helps you set up apache2 conf, disable default site and enable new site. Change variables.
 APACHE_DIR="/etc/apache2"
