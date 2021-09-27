@@ -1,5 +1,5 @@
 # Laravel CI\CD using AWS RDS EC2 S3 CodeDeploy BitBucket and Bash
-
+# Author Emad Zaamout | support@ahtcloud.com
 Laravel Deployment Automation. Using:
 - **AWS EC2 Instance** – to host our production server (optional + staging)
 - **AWS RDS Instance** – to run MySQL 8 Server for our Laravel project
